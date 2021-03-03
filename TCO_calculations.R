@@ -13,7 +13,8 @@ pad_cost <- read_csv("https://raw.githubusercontent.com/Averysaurus/TCO_shiny_R/
 
 ### Cost of consumables. 
 
-# Each case of QC 34 Neutral Floor Cleaner yields 176 gallons of ready to use product, total coverage per case is 70,400 square feet. Price is $48.72/case.
+# Each case of QC 34 Neutral Floor Cleaner yields 176 gallons of ready to use product.
+# Total coverage per case is 70,400 square feet. Price is $48.72/case.
 
 cleaner_cost_per_ft <- 48.72 / 70400
 buff_pad_cost <- 5.398
@@ -72,3 +73,4 @@ seal <-
 seal_mean_ft <- mean(seal$sq_ft_per_hour) 
 seal_cost_per_ft <- 13.92 / seal_mean_ft 
 
+# ~fin
