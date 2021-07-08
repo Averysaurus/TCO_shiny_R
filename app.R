@@ -139,9 +139,7 @@ ui <- fluidPage(theme = shinytheme("spacelab"),
 
 
 server <- function(input, output) {
-  
-  
-  
+    
   # aggregrate metrics into reactive bar chart values. 
   select_price <- reactive({
     
@@ -162,7 +160,8 @@ server <- function(input, output) {
   output$tco_num_2 <- renderText({
     paste('$',round(select_price()[2], 2))
   })
-  
+
+# visualize output
   my_bar <- output$costPlot <- renderPlot({
     barplot(select_price(), 
             beside = T,
