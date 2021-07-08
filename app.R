@@ -11,8 +11,6 @@ ui <- fluidPage(theme = shinytheme("spacelab"),
                                     "This app was developed by <a href='https://www.linkedin.com/in/averysaurus/'>Avery Richards</a> in partnership, and with a great deal of guidance, from the <a href='https://ceh.org/'>Center for Environmental Health</a>. <p>" )),
                          titlePanel(""),
                          
-                         
-                         
                          sidebarPanel(
                            helpText("Product 1 lifespan:"),
                            numericInput(
@@ -132,8 +130,7 @@ ui <- fluidPage(theme = shinytheme("spacelab"),
                                                                   0.003205305))
                                 ),
                   )),
-                
-                
+                 
                 plotOutput("costPlot")
 )
 
